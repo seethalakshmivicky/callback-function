@@ -1,0 +1,22 @@
+<!DOCTYPE htm1>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ES6 callback function</title>
+ </head>
+<body>
+ <script>
+  function multiply(num1, num2) {
+    return num1 * num2;
+}
+
+function calculator(callback, num1, num2) {
+    return callback(num1, num2);
+}
+
+console.log(calculator(multiply, 6, 7));
+
+ </script>
+</body> 
+</html> 
